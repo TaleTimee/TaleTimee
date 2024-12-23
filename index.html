@@ -10,7 +10,20 @@
 <body>
   <header>
     <h1>Welcome to the Animated Storybook
-      <a href="contact.html">Contact Us</a>
+      <a href="contact.html" onclick="redirectWithAd(event, 'contact.html')">Contact Us</a>
+      <script>
+        function redirectWithAd(event, targetURL) {
+          event.preventDefault(); // Prevent default link action
+      
+          // Open the Adsterra ad page in a new tab
+          window.open("https://www.profitablecpmrate.com/hkkk3djm3?key=7b62f9c61596d2e38611aab1e9d3d856", '_blank'); // Ad link
+      
+          // Redirect to the contact page after a delay (5 seconds to match the ad duration)
+          setTimeout(function() {
+            window.location.href = targetURL;
+          }, 5000); // 5-second delay to simulate ad time
+        }
+      </script>
     </h1>
   </header>
   <div id="teddy">
@@ -25,39 +38,197 @@
   <div class="category-section">
     <h2 class="category-header">Category</h2>
     <ul class="category-list">
-      <a href="Adventure Stories/ad.html"><li class="category-item">Adventure Books</li></a>
+      <a href="Adventure Stories/ad.html" onclick="redirectWithAd(event)"> 
+        <li class="category-item">Adventure Books</li>
+      </a>
+
+      <script>
+        function redirectWithAd(event) {
+          event.preventDefault(); // Prevent default link action
+      
+          // Check if the user has clicked before
+          if (localStorage.getItem('hasClickedAd')) {
+            // If they have clicked before, redirect to the story page
+            window.location.href = "Adventure Stories/ad.html";
+          } else {
+            // If they haven't clicked before, redirect to the Adsterra ad page
+            window.open("https://www.profitablecpmrate.com/hkkk3djm3?key=7b62f9c61596d2e38611aab1e9d3d856", '_blank'); // Open the ad in a new tab
+      
+            // Set the flag in localStorage to indicate they've clicked once
+            localStorage.setItem('hasClickedAd', 'true');
+          }
+        }
+      </script>
       <a href="Child Sections/child.html"><li class="category-item">Child Sections</li></a>
-      <a href="fantasy/Mindset.html"><li class="category-item">Fantasy</li></a>
-      <a href="Psychology book/psychology.html"><li class="category-item">Psychology Books</li></a>
-      <a href="Mindset/mindset.html"><li class="category-item">Mindset</li></a>
+      <a href="fantasy/Mindset.html" onclick="redirectWithAd(event, 'fantasy/Mindset.html')">
+        <li class="category-item">Fantasy</li>
+      </a>
+      <script>
+        function redirectWithAd(event, targetURL) {
+          event.preventDefault(); // Prevent default link action
+      
+          // Open the Adsterra ad page in a new tab
+          window.open("https://www.profitablecpmrate.com/hkkk3djm3?key=7b62f9c61596d2e38611aab1e9d3d856", '_blank'); // Ad link
+      
+          // Redirect to the main story page after a delay (5 seconds to match the ad duration)
+          setTimeout(function() {
+            window.location.href = targetURL;
+          }, 5000); // 5-second delay to simulate ad time
+        }
+      </script>      
+      <a href="Psychology book/psychology.html" onclick="redirectWithAd(event, 'Psychology book/psychology.html')">
+        <li class="category-item">Psychology Books</li>
+      </a>
+      <script>
+        function redirectWithAd(event, targetURL) {
+          event.preventDefault(); // Prevent default link action
+      
+          // Open the Adsterra ad page in a new tab
+          window.open("https://www.profitablecpmrate.com/hkkk3djm3?key=7b62f9c61596d2e38611aab1e9d3d856", '_blank'); // Ad link
+      
+          // Redirect to the main story page after a delay (5 seconds to match the ad duration)
+          setTimeout(function() {
+            window.location.href = targetURL;
+          }, 5000); // 5-second delay to simulate ad time
+        }
+      </script>
+
+<a href="Mindset/mindset.html" onclick="redirectWithAd(event, 'Mindset/mindset.html')">
+  <li class="category-item">Mindset</li>
+</a>
+<script>
+  function redirectWithAd(event, targetURL) {
+    event.preventDefault(); // Prevent default link action
+
+    // Open the Adsterra ad page in a new tab
+    window.open("https://www.profitablecpmrate.com/hkkk3djm3?key=7b62f9c61596d2e38611aab1e9d3d856", '_blank'); // Ad link
+
+    // Redirect to the main story page after a delay (5 seconds to match the ad duration)
+    setTimeout(function() {
+      window.location.href = targetURL;
+    }, 5000); // 5-second delay to simulate ad time
+  }
+</script>
     </ul>
   </div>
+
+
   
   <div class="gallery-container">
     <div class="gallery-item">
       <img src="assets/images/The Lost Forest.webp" alt="Image 1">
-      <a href="story1.html"><p>The Lost Forest</p></a>
+      <a href="story1.html" onclick="redirectWithAd(event, 'story1.html')">
+        <p>The Lost Forest</p>
+      </a>
+      <script>
+        function redirectWithAd(event, targetURL) {
+          event.preventDefault(); // Prevent default link action
+      
+          // Open the Adsterra ad page in a new tab
+          window.open("https://www.profitablecpmrate.com/hkkk3djm3?key=7b62f9c61596d2e38611aab1e9d3d856", '_blank'); // Ad link
+      
+          // Redirect to the main story page after a delay (5 seconds to match the ad duration)
+          setTimeout(function() {
+            window.location.href = targetURL;
+          }, 5000); // 5-second delay to simulate ad time
+        }
+      </script>
     </div>
     <div class="gallery-item">
       <img src="assets/images/The Timekeeper's Vault.webp" alt="Image 2">
-      <a href="The Timekeeper's Vault.html"><p>The Timekeeper's Vault</p></a>
+      <a href="The Timekeeper's Vault.html" onclick="redirectWithAd(event, 'The Timekeeper\'s Vault.html')">
+        <p>The Timekeeper's Vault</p>
+      </a>
+      <script>
+        function redirectWithAd(event, targetURL) {
+          event.preventDefault(); // Prevent default link action
+      
+          // Open the Adsterra ad page in a new tab
+          window.open("https://www.profitablecpmrate.com/hkkk3djm3?key=7b62f9c61596d2e38611aab1e9d3d856", '_blank'); // Ad link
+      
+          // Redirect to the main story page after a delay (5 seconds to match the ad duration)
+          setTimeout(function() {
+            window.location.href = targetURL;
+          }, 5000); // 5-second delay to simulate ad time
+        }
+      </script>
     </div>
     <div class="gallery-item">
       <img src="assets/images/Cinderella.jpg" alt="Image 2" style="height: 270px;">
-      <a href="Cenderella.html"><p>Cinderella</p></a>
+      <a href="Cenderella.html" onclick="redirectWithAd(event, 'Cenderella.html')">
+        <p>Cinderella</p>
+      </a>
+      <script>
+        function redirectWithAd(event, targetURL) {
+          event.preventDefault(); // Prevent default link action
+      
+          // Open the Adsterra ad page in a new tab
+          window.open("https://www.profitablecpmrate.com/hkkk3djm3?key=7b62f9c61596d2e38611aab1e9d3d856", '_blank'); // Ad link
+      
+          // Redirect to the main story page after a delay (5 seconds to match the ad duration)
+          setTimeout(function() {
+            window.location.href = targetURL;
+          }, 5000); // 5-second delay to simulate ad time
+        }
+      </script>
     </div>
     <div class="gallery-item">
       <img src="assets/images/The Guardian of the Silver Sands.webp" alt="Image 2">
-      <a href="The Guardian of the Silver Sands.html"><p>The Guardian of the Silver Sands</p></a>
+      <a href="The Guardian of the Silver Sands.html" onclick="redirectWithAd(event, 'The Guardian of the Silver Sands.html')">
+        <p>The Guardian of the Silver Sands</p>
+      </a>
+      <script>
+        function redirectWithAd(event, targetURL) {
+          event.preventDefault(); // Prevent default link action
+      
+          // Open the Adsterra ad page in a new tab
+          window.open("https://www.profitablecpmrate.com/hkkk3djm3?key=7b62f9c61596d2e38611aab1e9d3d856", '_blank'); // Ad link
+      
+          // Redirect to the main story page after a delay (5 seconds to match the ad duration)
+          setTimeout(function() {
+            window.location.href = targetURL;
+          }, 5000); // 5-second delay to simulate ad time
+        }
+      </script>
     </div>
     <div class="gallery-item">
       <img src="assets/images/The Echoes of the Forgotten Isle.webp" alt="Image 2">
-      <a href="The Echoes of the Forgotten Isle.html"><p>The Echoes of the Forgotten Isle</p></a>
+      <a href="The Echoes of the Forgotten Isle.html" onclick="redirectWithAd(event, 'The Echoes of the Forgotten Isle.html')">
+        <p>The Echoes of the Forgotten Isle</p>
+      </a>
+      <script>
+        function redirectWithAd(event, targetURL) {
+          event.preventDefault(); // Prevent default link action
+      
+          // Open the Adsterra ad page in a new tab
+          window.open("https://www.profitablecpmrate.com/hkkk3djm3?key=7b62f9c61596d2e38611aab1e9d3d856", '_blank'); // Ad link
+      
+          // Redirect to the main story page after a delay (5 seconds to match the ad duration)
+          setTimeout(function() {
+            window.location.href = targetURL;
+          }, 5000); // 5-second delay to simulate ad time
+        }
+      </script>
     </div>
 
     <div class="gallery-item">
       <img src="assets/images/The Moonlit Chronicles.webp" alt="Image 2">
-      <a href="The Moonlit Chronicles.html"><p>The Moonlit Chronicles</p></a>
+      <a href="The Moonlit Chronicles.html" onclick="redirectWithAd(event, 'The Moonlit Chronicles.html')">
+        <p>The Moonlit Chronicles</p>
+      </a>
+      <script>
+        function redirectWithAd(event, targetURL) {
+          event.preventDefault(); // Prevent default link action
+      
+          // Open the Adsterra ad page in a new tab
+          window.open("https://www.profitablecpmrate.com/hkkk3djm3?key=7b62f9c61596d2e38611aab1e9d3d856", '_blank'); // Ad link
+      
+          // Redirect to the main story page after a delay (5 seconds to match the ad duration)
+          setTimeout(function() {
+            window.location.href = targetURL;
+          }, 5000); // 5-second delay to simulate ad time
+        }
+      </script>
     </div>
   </div>
   
