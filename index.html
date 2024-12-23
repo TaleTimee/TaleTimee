@@ -38,27 +38,24 @@
   <div class="category-section">
     <h2 class="category-header">Category</h2>
     <ul class="category-list">
-      <a href="Adventure Stories/ad.html" onclick="redirectWithAd(event)"> 
-        <li class="category-item">Adventure Books</li>
+      
+      <a href="Adventure Stories/ad.html" onclick="redirectWithAd(event, 'Adventure Stories/ad.html')">
+        <li class="category-item">Adventure</li>
       </a>
-
       <script>
-        function redirectWithAd(event) {
+        function redirectWithAd(event, targetURL) {
           event.preventDefault(); // Prevent default link action
       
-          // Check if the user has clicked before
-          if (localStorage.getItem('hasClickedAd')) {
-            // If they have clicked before, redirect to the story page
-            window.location.href = "Adventure Stories/ad.html";
-          } else {
-            // If they haven't clicked before, redirect to the Adsterra ad page
-            window.open("https://www.profitablecpmrate.com/hkkk3djm3?key=7b62f9c61596d2e38611aab1e9d3d856", '_blank'); // Open the ad in a new tab
+          // Open the Adsterra ad page in a new tab
+          window.open("https://www.profitablecpmrate.com/hkkk3djm3?key=7b62f9c61596d2e38611aab1e9d3d856", '_blank'); // Ad link
       
-            // Set the flag in localStorage to indicate they've clicked once
-            localStorage.setItem('hasClickedAd', 'true');
-          }
+          // Redirect to the main story page after a delay (5 seconds to match the ad duration)
+          setTimeout(function() {
+            window.location.href = targetURL;
+          }, 5000); // 5-second delay to simulate ad time
         }
       </script>
+      
       <a href="Child Sections/child.html"><li class="category-item">Child Sections</li></a>
       <a href="fantasy/Mindset.html" onclick="redirectWithAd(event, 'fantasy/Mindset.html')">
         <li class="category-item">Fantasy</li>
