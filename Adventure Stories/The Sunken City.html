@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lost Forex</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1c92d2, #f2fcfe);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1c92d2;
+            animation: fadeIn 2s ease-out, shake 0.5s ease-in-out infinite;
+        }
+
+        .welcome {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #555;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .emoji {
+            font-size: 2rem;
+            animation: bounce 1s infinite alternate;
+        }
+
+        .read-time {
+            font-size: 0.9rem;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            color: #777;
+        }
+
+        .story {
+            text-align: left;
+            line-height: 1.8;
+            color: #333;
+            animation: fadeIn 3s ease-out;
+        }
+        img {
+            width: 120px;
+            animation: img 3s ease-out, bounce 1s infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes shake {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-5px);
+            }
+            50% {
+                transform: translateX(5px);
+            }
+            75% {
+                transform: translateX(-5px);
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">The Sunken City</div>
+        <div class="welcome">
+            Welcome to your reading journey! <span class="emoji">😊</span>
+        </div>
+        <img id="image" src="images/The Sunken City.jpg">
+        <br/><br/><br/>
+        <div class="read-time">8 mins read</div>
+        <div class="story">
+            While snorkeling off the coast, 16-year-old Jack stumbled upon ruins submerged under the turquoise waters. The carvings hinted at a lost civilization. Jack, with his best friend Sara, returned with diving gear to explore. They found a massive underwater temple, guarded by mechanical guardians that had survived centuries. Solving puzzles and dodging traps, they reached a central chamber housing a glowing orb. Touching it triggered a holographic message from the past, revealing the civilization's downfall. They surfaced just as a storm brewed, leaving them wondering what other secrets lay beneath the ocean’s surface.
+        </div>
+    </div>
+
+    <a style="text-align: center;" href="index.html">Home</a>
+</body>
+</html>
